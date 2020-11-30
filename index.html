@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>UxTips</title>
 </head>
@@ -45,7 +46,7 @@
 
         </section>
 
-        <section id="seccionDos">
+        <section id="seccion-cursos">
             <div id="contenidoDos">
                 <h2 class="subtitulos">Cursos Profesionales</h2>
                 <p class="parrafoSubtitulo">Aprende las herramientas de diseño UX/UI</p>
@@ -94,7 +95,7 @@
 
         <section id="seccion-testimonios">
             
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="prev" onclick="moverSlider(-1)">&#10094</a>
             
             <div class="mySlides fade testigos">
                 <div class="row-flex">
@@ -116,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <a class="next" onclick="moverSlider(1)">&#10095</a>
         
         </section>
 
@@ -169,7 +170,7 @@
             <p class="parrafoSubtitulo">Cada tanto envio novedades  de UX. ¿Te apuntas?</p>
             
             <form action="" method="POST">
-                <input type="text"> 
+                <input type="email"> 
                 <input type="submit" value="SUSCRÍBETE">
             </form>
 
@@ -177,7 +178,22 @@
 
         </section>
 
-        <section></section>
+        <footer>
+            <div id="foot-cursos">
+                <a href="#seccion-cursos">Cursos</a>
+                <a href="#seccion-tutoriales">Tutoriales</a>
+            </div>
+
+            <div class="foot-redes">
+                <a class="footer-red" target="__blank" href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                <a class="footer-red" target="__blank" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a class="footer-red" target="__blank" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer-red" target="__blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copy">
+                &copy 2020 UXTips
+            </div>
+        </footer>
 
     </div>
 

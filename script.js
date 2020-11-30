@@ -21,3 +21,29 @@ function showSlides() {
 
 }
 
+function moverSlider(valor){
+
+    let slides = document.getElementsByClassName("mySlides");
+    let i;
+
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    } 
+    if(valor < 0){
+        if(slideIndex === 0){
+            slideIndex = slides.length - 1
+        } else {
+            slideIndex--
+        }
+        slides[slideIndex].style.display = "block";
+    }   
+    if(valor > 0){
+        if(slideIndex >= slides.length -1){
+            slideIndex = 0;
+        } else {
+            slideIndex++
+        }
+        slides[slideIndex].style.display = "block";
+    }
+
+}
